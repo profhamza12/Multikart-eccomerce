@@ -1,0 +1,973 @@
+/* Start Main Styles */
+*
+{
+    font-family: 'Teko', sans-serif;
+    font-family: 'Lora', serif;
+    line-height: 1.5;
+    letter-spacing: 1.4px;
+    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.container
+{
+    width: 87%;
+    margin: auto;
+}
+/* End Main Styles */
+
+/* Start Loading Section Style*/
+div.loading
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3000;
+    -webkit-transition: transform .5s ease-in-out;
+       -moz-transition: transform .5s ease-in-out;
+         -o-transition: transform .5s ease-in-out;
+            transition: transform .5s ease-in-out;
+}
+div.loading img
+{
+    width: 100%;
+    height: 100%;
+}
+.hideLoad
+{
+    -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+         -o-transform: scale(0);
+            transform: scale(0);
+}
+/* End Loading Section Style */
+
+/* Start Go To Top Section */
+div.goTo
+{
+    position: fixed;
+    bottom: 7%;
+    right: 5%;
+    z-index: 2000;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(255 , 79 , 56);
+    border-radius: 50%;
+    font-size: 2em;
+    color: rgb(255 , 79 , 56);
+    text-align: center;
+    cursor: pointer
+}
+/* End Go To Top Section */
+
+/* Start Header Style */
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    -webkit-box-shadow: 2px 2px 2px 2px #eee;
+       -moz-box-shadow: 2px 2px 2px 2px #eee;
+         -o-box-shadow: 2px 2px 2px 2px #eee;
+            box-shadow: 2px 2px 2px 2px #eee;
+    border: 1px solid #ccc;
+    background-color: rgb(251 , 251 , 251);
+    z-index: 2000;
+}
+header div.iconImage ,
+header nav
+{
+    padding: 15px;
+}
+header div.loadIcon
+{
+    width: 20%;
+}
+header nav
+{
+    width: 65%;
+    margin: auto; 
+}
+header div.purchase
+{
+    width: 15%;
+}
+header nav ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-transition: height .4s ease-in-out;
+       -moz-transition: height .4s ease-in-out;
+         -o-transition: height .4s ease-in-out;
+            transition: height .4s ease-in-out;
+}
+header nav ul li a
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: .92em;
+    color: #000;
+    margin-right: 30px;
+    -webkit-transition: color .5s ease-in-out;
+       -moz-transition: color .5s ease-in-out;
+         -o-transition: color .5s ease-in-out;
+            transition: color .5s ease-in-out;
+}
+header nav ul li a:hover
+{
+    color: rgb(255 , 79 , 56);
+}
+header div.purchase button
+{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+}
+header div.purchase button a
+{
+    display: block;
+    height: 100%;
+    padding: 15px;
+    padding-top: 22px;
+    text-decoration: none;
+    background-color: rgb(255 , 79 , 56);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+}
+header div.menuIcon
+{
+    position: absolute;
+    top: 20px;
+    right: 18%;
+    display: none;
+}
+header div.menuIcon i
+{
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.togNav
+{
+    height: 400px;
+}
+/* End Header Style */
+
+/* Start Multikart Article */
+article.multikart
+{
+    position: relative;
+    margin-top: 90px;
+    height: 500px;
+}
+article.multikart section.productImg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+article.multikart section.productImg
+{
+    display: flex;
+    justify-content: space-between;
+}
+article.multikart section.productImg div.leftImgs ,
+article.multikart section.productImg div.rightImgs
+{
+    width: 50%;
+}
+article.multikart section.productImg div.leftImgs , 
+article.multikart section.productImg div.rightImgs
+{
+    display: flex;
+    padding: 70px;
+}
+article.multikart section.productImg div.leftImgs div ,
+article.multikart section.productImg div.rightImgs div
+{
+    width: 50%;
+    perspective: 600px;
+}
+article.multikart section.productImg div.leftImgs div img , 
+article.multikart section.productImg div.rightImgs div img
+{
+    display: block;
+    height: 50px;
+    position: relative;
+    margin-bottom: 60px;
+    transform-style: preserve-3d;
+    animation: animateImg 1.5s ease-in-out 0s alternate infinite;
+}
+article.multikart section.productImg div.leftImgs div.col1 img:first-of-type ,
+article.multikart section.productImg div.rightImgs div.col1 img:first-of-type
+{
+    animation-timing-function:  ease;
+}
+article.multikart section.productImg div.leftImgs div.col1 img:nth-of-type(2) ,
+article.multikart section.productImg div.rightImgs div.col1 img:nth-of-type(2)
+{
+    animation-timing-function:  ease-in;
+}
+article.multikart section.productImg div.leftImgs div.col1 img:last-of-type ,
+article.multikart section.productImg div.rightImgs div.col1 img:last-of-type
+{
+    animation-timing-function:  ease-out;
+}
+article.multikart section.productImg div.leftImgs div.col2 img:first-of-type ,
+article.multikart section.productImg div.rightImgs div.col2 img:first-of-type
+{
+    animation-timing-function:  ease-in-out;
+}
+article.multikart section.productImg div.leftImgs div.col2 img:nth-of-type(2) ,
+article.multikart section.productImg div.rightImgs div.col2 img:nth-of-type(2)
+{
+    animation-timing-function:  linear;
+}
+article.multikart section.productImg div.leftImgs div img:nth-child(2) ,
+article.multikart section.productImg div.leftImgs div img:nth-child(3)
+{
+    height: 100px;
+    transform: translate3d(-40px , 20px , 90px)
+}
+article.multikart section.productImg div.rightImgs div.col1 img:nth-child(1) ,
+article.multikart section.productImg div.rightImgs div.col1 img:nth-child(3)
+{
+    height: 100px;
+    transform: translate3d(0 , 20px , 90px)
+}
+article.multikart section.productImg div.rightImgs div.col1 img:nth-child(2)
+{
+    transform: translateX(140px)
+}
+article.multikart section.productImg div.rightImgs div.col2 img
+{
+    height: 200px;
+}
+article.multikart section.productImg div.rightImgs div.col2 img:nth-child(2)
+{
+    transform: translateX(110px)
+}
+article.multikart section.theme
+{
+    position: absolute;
+    top: 26%;
+    left: 24%;
+    width: 600px;
+    height: 270px;
+    text-align: center;
+    background-color: rgba(251 , 251 , 251 , .7);
+}
+article.multikart section.theme h1
+{
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    font-size: 3.5em;
+    margin: 0
+}
+article.multikart section.theme h1 span
+{
+    color: rgb(255 , 79 , 56)
+}
+article.multikart section.theme p
+{
+    text-transform: capitalize;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 15px;
+    letter-spacing: 1.7px;
+}
+article.multikart section.theme p span
+{
+    color: rgb(255 , 79 , 56);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+/* End Multikart Article */
+
+/* Start Reasones Article */
+article.features
+{
+    margin: 7% 0;
+}
+article.features div.container >h3 , 
+article.features div.container >p
+{
+    text-transform: capitalize;
+    text-align: center;
+    margin: 20px;
+}
+article.features div.container >p
+{
+    color: rgba(0,0,0,.6);
+    margin: auto 15%;
+}
+article.features div.templates
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+article.features div.templates >div
+{
+    width: 23%;
+    -webkit-perspective: 600px;
+       -moz-perspective: 600px;
+         -o-perspective: 600px;
+            perspective: 600px;
+}
+article.features div.templates >div img
+{
+    width: 100%;
+    border-radius: 40px;
+    -webkit-box-shadow: 5px 5px 5px 20px rgb(251 , 251 , 251);
+       -moz-box-shadow: 5px 5px 5px 20px rgb(251 , 251 , 251);
+         -o-box-shadow: 5px 5px 5px 20px rgb(251 , 251 , 251);
+            box-shadow: 5px 5px 5px 20px rgb(251 , 251 , 251);
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+         -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    transition: transform .4s ease-in-out;
+}
+article.features div.templates >div img:hover
+{
+    transform: translateZ(30px);
+}
+article.features div.templates >div h4
+{
+    padding-top: 40px;
+    margin: 0;
+    text-transform: capitalize;
+}
+article.features div.templates >div h4 span
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+article.features div.templates >div h4 span:first-of-type
+{
+    background-color: #f00;
+}
+article.features div.templates >div h4 span:nth-of-type(2)
+{
+    background-color: yellow;
+}
+article.features div.templates >div h4 span:last-of-type
+{
+    background-color: #0f0;
+    margin-right: 20px;
+}
+article.features div.templates >div p
+{
+    margin: 8px 0;
+    color: rgba(0,0,0,.8);
+    letter-spacing: normal
+}
+/* End Reasones Article */
+
+/* Start frontend Article */
+article.frontend
+{
+    background-image: url(../images/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+article.frontend div.justFor
+{
+    text-align: center;
+    padding-top: 40px;
+}
+article.frontend div.justFor h3
+{
+    text-transform: uppercase;
+    margin: 3px;
+}
+article.frontend div.justFor span
+{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    font-weight: 900;
+}
+article.frontend ul.feutsList
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+article.frontend ul.feutsList li
+{
+    margin-right: 25px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color .4s ease-in-out;
+}
+article.frontend ul.feutsList li.selected
+{
+    background-color: rgb(255 , 79 , 56);
+    color: #fff;
+}
+article.frontend ul.feutsList li:hover
+{
+    background-color: #eee;
+}
+article.frontend ul.feutsList li.selected:hover
+{
+    background-color: rgb(255 , 79 , 56);
+}
+article.frontend section.feutsContainer
+{
+    position: relative;
+}
+article.frontend section.feutsContainer >div
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    transition: opacity .4s ease-in-out;
+}
+article.frontend section.feutsContainer >div >div
+{
+    width: 22%;
+    margin: 1.5%;
+    text-align: center;
+    text-transform: capitalize;
+    perspective: 600px;
+}
+article.frontend section.feutsContainer >div >div img
+{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgb(245 , 245 , 245) , 
+                -5px -5px 5px 5px rgb(245 , 245 , 245);
+    transform-style: preserve-3d;
+    transition: transform .4s ease-in-out;
+}
+article.frontend section.feutsContainer >div >div img:hover
+{
+    transform: translateZ(30px);
+}
+article.frontend article.ecommerce
+{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 115%;
+}
+article.frontend article.ecommerce div.feutsCommerce
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+article.frontend article.ecommerce div.feutsCommerce div
+{
+    width: 22%;
+    margin: 1.5%;
+    perspective: 600px
+}
+article.frontend article.ecommerce div.feutsCommerce div img
+{
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform .4s ease-in-out;
+    box-shadow: 5px 5px 5px 5px rgb(245 , 245 , 245) , 
+                -5px -5px 5px 5px rgb(245 , 245 , 245);
+}
+article.frontend article.ecommerce div.feutsCommerce div img:hover
+{
+    transform: translateZ(30px);
+}
+.hideSection
+{
+    opacity: 0;
+    z-index: -1;
+}
+/* End frontend Article */
+
+/* Start Article Special Feutures */
+article.specialFeat
+{
+    background-color: #eee;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px 0;
+    margin-top: 35px;
+}
+article.specialFeat p
+{
+    margin: auto 130px;
+    color: rgba( 0 , 0 , 0 , .6);
+}
+article.specialFeat div.ourFeats
+{
+    display: flex;
+    flex-wrap: wrap
+}
+article.specialFeat div.ourFeats div
+{
+    width: 30%;
+    margin: 1.5%;
+    text-align: left;
+    perspective: 600px
+}
+article.specialFeat div.ourFeats div span
+{
+    display: inline-block;
+    margin-right: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+article.specialFeat div.ourFeats div span:first-of-type
+{
+    background-color: #f00
+}
+article.specialFeat div.ourFeats div span:nth-of-type(2)
+{
+    background-color: yellow
+}
+article.specialFeat div.ourFeats div span:last-of-type
+{
+    background-color: #0f0
+}
+article.specialFeat div.ourFeats div img
+{
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+    transition: transform .4s ease-in-out;
+    transform-style: preserve-3d
+}
+article.specialFeat div.ourFeats div img:hover
+{
+    transform: translateZ(30px);
+}
+/* End Article Special Feutures*/
+
+/* Start Article Popus */
+article.popup
+{
+    padding: 20px 0;
+    text-align: center;
+    text-transform: capitalize
+}
+article.popup p
+{
+    color: rgba(0,0,0,.6);
+    margin-bottom: 30px;
+    margin-top: -7px;
+}
+article.popup img
+{
+    width: 100%;
+}
+/* End Article Popus */
+
+/* Start Article Email */
+article.email
+{
+    padding: 70px 0;
+    margin-top: 30px;
+    background-color: #eee;
+    text-align: center;
+}
+article.email div.emailFlex
+{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+article.email div.emailFlex >div
+{
+    width: 30%;
+    margin: 1.5%;
+    height: 800px;
+}
+article.email div.emailFlex div.col1 img:nth-of-type(2)
+{
+    width: 180px;
+    margin: 20px auto
+}
+article.email div.emailFlex div.col2 h3
+{
+    text-transform: capitalize;
+    margin-top: 0
+}
+article.email div.emailFlex div.col2 p
+{
+    color: rgba(0,0,0,.6);
+    margin-bottom: 50px;
+    margin-top: -6px;
+}
+article.email div.emailFlex div img
+{
+    display: block;
+    width: 100%;
+    height: 100%
+}
+article.email div.emailFlex div.col1 img:nth-of-type(1)
+{
+    height: 75%
+}
+article.email div.emailFlex div.col1 img:last-of-type
+{
+    height: 25%;
+}
+article.email div.emailFlex div.col2 img
+{
+    height: 80%;
+}
+/* End Article Email */
+
+/* Start Article Core Features */
+article.core
+{
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+article.core p
+{
+    color: rgba(0 , 0 , 0 , .8);
+    margin-bottom: 30px;
+    margin-top: -6px;
+}
+article.core div.coreFeats
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+article.core div.coreFeats >div
+{
+    width: 13%;
+    margin: 1.5%;
+    text-transform: capitalize;
+}
+article.core div.coreFeats >div div
+{
+    background-color: #eee;
+    border-radius: 10px;
+    height: 135px;
+    padding-top: 25px;
+    transition: box-shadow .4s ease-in-out;
+}
+article.core div.coreFeats >div h4
+{
+    transition: color .4s ease-in-out;
+}
+article.core div.coreFeats >div:hover div
+{
+    box-shadow: 5px 5px 5px 5px #ccc , 
+                -5px -5px 5px 5px #ccc;
+}
+article.core div.coreFeats >div:hover h4
+{
+    color: rgb(255 , 79 , 56)
+}
+/* End Article Core Features */
+
+/* Start Footer */
+footer
+{
+    min-height: 400px;
+    background-color: #eee;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    padding: 70px 0;
+    text-align: center
+}
+footer i
+{
+    font-size: 2em;
+    margin-right: 7px;
+    color: rgb(255 , 210 , 3)
+}
+footer p
+{
+    font-size: 2.2em;
+    width: 600px;
+    margin: 20px auto 40px;
+    text-transform: capitalize
+}
+footer button
+{
+    width: 230px;
+    border: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.1em;
+    background-color: rgb(255 , 79 , 56);
+    border-radius: 10px;
+    cursor: pointer;
+}
+footer button:focus
+{
+    outline: 0;
+    background-color: inherit;
+    color: #000;
+    border: 2px solid rgb(255 , 79 , 56);
+}
+/* End Footer */
+
+/* Start animation Part */
+@keyframes animateImg
+{
+    from
+    {
+        top: 10px
+    }
+    to
+    {
+        top: -10px
+    }
+}
+/* End animation Part */
+
+/* Start Media Query */
+
+/* Additional media */
+@media screen and (min-width: 1200px) and (max-width: 1350px)
+{
+    header div.loadIcon
+    {
+        width: 10%;
+    }
+    header nav
+    {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 499px)
+{
+    header div.purchase
+    {
+        display: none
+    }
+    header div.menuIcon
+    {
+        right: 3% !important;
+    }
+    article.multikart
+    {
+        height: 280px !important;
+    }
+    article.multikart section.theme h1
+    {
+        font-size: 2em !important;
+    }
+    article.multikart section.theme p
+    {
+        font-size: 1em !important;
+    }
+}
+/* Tab , Mini lab */
+@media screen and (min-width: 768px) and (max-width: 1200px)
+{
+    article.frontend section.feutsContainer >div >div , 
+    article.ecommerce div.feutsCommerce div
+    {
+        width: 47% !important;
+    }
+    article.ecommerce
+    {
+        margin-top: 350% !important;
+    }
+    article.specialFeat div.ourFeats div
+    {
+        width: 47% !important;
+    }
+    article.core div.coreFeats >div
+    {
+        width: 18% !important;
+        margin: 2%;
+    }
+}
+
+/* mobile */
+@media screen and (min-width: 250px) and (max-width: 767px)
+{
+    article.features div.container >p
+    {
+        margin: 0 2%;
+    }
+    article.features div.templates >div
+    {
+        width: 100% !important;
+    }
+    article.frontend section.feutsContainer >div >div , 
+    article.ecommerce div.feutsCommerce div
+    {
+        width: 100% !important;
+    }
+    article.ecommerce
+    {
+        margin-top: 1250% !important;
+    }
+    article.specialFeat div.ourFeats div
+    {
+        width: 100% !important;
+    }
+    article.email div.emailFlex
+    {
+        padding-top: 120px;
+    }
+    article.email div.emailFlex >div
+    {
+        height: 280px;
+    }
+    article.email div.emailFlex div.col2 div
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    article.email div.emailFlex >div img
+    {
+        height: 100% !important;
+    }
+    article.email div.emailFlex div.col1 img:last-of-type
+    {
+        display: none;
+    }
+    article.core div.coreFeats >div
+    {
+        width: 42% !important;
+        margin: 2%;
+    }
+}
+
+/* Additional Media */
+@media screen and (min-width: 250px) and (max-width: 676px)
+{
+    article.ecommerce
+    {
+        margin-top: 1280% !important;
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 578px)
+{
+    article.ecommerce
+    {
+        margin-top: 1340% !important;
+    }
+}
+
+
+/* mobile , tab */
+@media screen and (min-width: 250px) and (max-width: 992px)
+{
+    header div.purchase
+    {
+        width: 30%;
+    }
+    header div.purchase button a
+    {
+        font-size: .92em;
+    }
+    header div.menuIcon
+    {
+        right: 32%;
+    }
+    article.multikart section.productImg
+    {
+        display: none;
+    }
+    article.multikart
+    {
+        height: 380px !important;
+    }
+    article.multikart section.theme
+    {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100% !important;
+        text-align: center;
+        padding-top: 60px !important;
+    }
+    article.specialFeat p
+    {
+        margin: auto 0;
+    }
+    footer p
+    {
+        width: 100%;
+        font-size: 1.5em;
+    }
+}
+/* mobile , tab , meni-lab */
+@media screen and (min-width: 250px) and (max-width: 1200px)
+{
+    header nav
+    {
+        padding: 10px;
+    }
+    header nav ul
+    {
+        flex-direction: column;
+        flex-wrap: nowrap !important;
+        background: #eee;
+        text-align: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    header nav ul li
+    {
+        margin: 15px 0;
+    }
+    header div.menuIcon
+    {
+        display: block;
+    }
+    article.multikart section.productImg div img
+    {
+        transform: translate3d(0 , 0 , 0) !important;
+        width: 110px;
+        height: 150px !important;
+        margin-bottom: 0 !important;
+    }
+    article.features div.templates >div
+    {
+        width: 46%;
+        margin-bottom: 60px;
+    }
+}
+/* End Media Query */

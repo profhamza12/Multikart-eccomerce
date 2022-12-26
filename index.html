@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <title>MultiKart Ecommerce Angular 8 | Angular Shoping Theme</title>
+        <meta name="description" content="Responsive Template">
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lora|Teko&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap">
+        
+        <link rel="stylesheet" href="styles/normalize.css">
+        
+        <link rel="stylesheet" href="styles/all.css">
+        
+        <link rel="stylesheet" href="styles/style.css">
+    
+        <link rel="icon" href="images/favIcon.png">
+        
+    </head>
+    <body>
+        <!-- Start Loding section -->
+        <div class="loading" id="loading">
+            <img src="images/load.gif" alt="loading image">
+        </div>
+        <!-- End Loding section -->
+        
+        <!-- Start Go To Top section -->
+        <div class="goTo" onclick="goTo()">
+            <i class="fas fa-angle-double-up"></i>
+        </div>
+        <!-- End Go To Top section -->
+        
+        <!-- Start Header -->
+        <header>
+            <div class="iconImage">
+                <img src="images/favIcon.png" alt="favicon">
+            </div>
+            <nav>
+                <ul id="list">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">feutures</a></li>
+                    <li><a href="#">frontend</a></li>
+                    <li><a href="#">admin</a></li>
+                    <li><a href="#">special feuture</a></li>
+                    <li><a href="#">insides</a></li>
+                    <li><a href="#">core feuture</a></li>
+                    <li><a href="#">footer</a></li>
+                </ul>
+            </nav>
+            <div class="purchase">
+                <button><a href="#">purchase</a></button>
+            </div>
+            <div class="menuIcon">
+                <i class="fas fa-align-justify" onclick="toggNav()"></i>
+            </div>
+        </header>
+        <!-- End Header -->
+        
+        <!-- Start Multikart Article -->
+        <article class="multikart">
+            <section class="productImg">
+                <div class="leftImgs">
+                    <div class="col1">
+                        <img src="images/1.png">
+                        <img src="images/2.png">
+                        <img src="images/3.png">
+                    </div>
+                    <div class="col2">
+                        <img src="images/4.png">
+                        <img src="images/5.png">
+                        <img src="images/6.png">
+                    </div>
+                </div>
+                <div class="rightImgs">
+                    <div class="col1">
+                        <img src="images/7.png">
+                        <img src="images/8.png">
+                        <img src="images/9.png">
+                    </div>
+                    <div class="col2">
+                        <img src="images/10.png">
+                        <img src="images/11.png">
+                    </div>
+                </div>
+            </section>
+            <section class="theme">
+                <h1><span>multi</span>kart</h1>
+                <p>the <span>best selling</span> minimal theme</p>
+                <img src="images/text.png">
+            </section>
+        </article>
+        <!-- End Multikart Article -->
+        
+        <!-- Start Article features -->
+        <article class="features">
+            <div class="container">
+                <h3>reasones to buy multikart</h3>
+                <p>Multikart HTML template is an apparently simple but highly functional tempalate designed for creating a flourisahing online business.</p>
+                <div class="templates">
+                    <div>
+                        <img src="images/demo.png">
+                        <h4>
+                            <span></span><span></span><span></span>
+                            frontend template
+                        </h4>
+                        <p>Multikart is a clean and morfern responsive template.it will perfectly suit for any type of online store</p>
+                    </div>
+                    <div>
+                        <img src="images/email.png">
+                        <h4>
+                            <span></span><span></span><span></span>
+                            admin template
+                        </h4>
+                        <p>Multikart has powerful backend admin panel to manage products, sales, discount coupons, orders, user, vendor and much more.</p>
+                    </div>
+                    <div>
+                        <img src="images/portfoio.png">
+                        <h4>
+                            <span></span><span></span><span></span>
+                            email template
+                        </h4>
+                        <p>Multikart comes with 4 email template which include two order success template & two email template</p>
+                    </div>
+                    <div>
+                        <img src="images/dashboard.png">
+                        <h4>
+                            <span></span><span></span><span></span>
+                            portfolio template
+                        </h4>
+                        <p>Multikart provides multiple portfolio pages which includes 3 grid view & 4 masonary view.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- End Article features -->
+        
+        <!-- Start Article Feutures -->
+        <article class="frontend">
+            <div class="container">
+                <div class="justFor">
+                    <h3>30 + front-end demo</h3>
+                    <span>just for you</span>
+                </div>
+                <ul class="feutsList">
+                    <li class="item selected" id="item1" onclick="showSection('item1' , 'item' , 'test' , 'homeFlag')">home</li>
+                    <li class="item" id="item2" onclick="showSection('item2' , 'item' , 'test', 'productFlag')">product</li>
+                    <li class="item" id="item3" onclick="showSection('item3' , 'item' , 'test', 'shopFlag')">shop</li>
+                    <li class="item" id="item4" onclick="showSection('item4' , 'item' , 'test', 'otherFlag')">other</li>
+                    <li class="item" id="item5" onclick="showSection('item5' , 'item' , 'test' , 'blogFlag')">blog</li>
+                </ul>
+                <section class="feutsContainer">
+                    <div class="home test" id="homeFlag">
+                        <div>
+                            <a href="#"><img src="images/f1.jpg"></a>
+                            <h3>fashion</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/f2.jpg"></a>
+                            <h3>pets</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/f3.jpg"></a>
+                            <h3>left sidebar</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/f4.jpg"></a>
+                            <h3>man fashion</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/f5.jpg"></a>
+                            <h3>gym</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/f6.jpg"></a>
+                            <h3>marijuana</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/f7.jpg"></a>
+                            <h3>electronics</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/f8.jpg"></a>
+                            <h3>fashion</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/f9.jpg"></a>
+                            <h3>feshion</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/f10.jpg"></a>
+                            <h3>vegetable</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/f11.jpg"></a>
+                            <h3>watch</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/f12.jpg"></a>
+                            <h3>shose</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/f13.jpg"></a>
+                            <h3>flowers</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/f14.jpg"></a>
+                            <h3>Beauty</h3>
+                        </div>
+                    </div>
+                    <div class="product hideSection test" id="productFlag">
+                        <div>
+                            <a href="#"><img src="images/p1.jpg"></a>
+                            <h3>3 col left</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/p2.jpg"></a>
+                            <h3>3 col right</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/p3.jpg"></a>
+                            <h3>3 column</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/p4.jpg"></a>
+                            <h3>accordian</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/p5.jpg"></a>
+                            <h3>left image</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/p6.jpg"></a>
+                            <h3>left sidebar</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/p7.jpg"></a>
+                            <h3>no sidebar</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/p8.jpg"></a>
+                            <h3>right image</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/p9.jpg"></a>
+                            <h3>right sidebar</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/p10.jpg"></a>
+                            <h3>vertical tab</h3>
+                        </div>
+                    </div>
+                    <div class="shop hideSection test" id="shopFlag">
+                        <div>
+                            <a href="#"><img src="images/s1.jpg"></a>
+                            <h3>metro</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/s2.jpg"></a>
+                            <h3>left sidebar</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/s3.jpg"></a>
+                            <h3>no sidebar</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/s4.jpg"></a>
+                            <h3>right sidebar</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/s5.jpg"></a>
+                            <h3>sidebar popup</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/s6.jpg"></a>
+                            <h3>infinite scroll</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/s7.jpg"></a>
+                            <h3>3 grid</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/s8.jpg"></a>
+                            <h3>6 grid</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/s9.jpg"></a>
+                            <h3>list view</h3>
+                        </div>
+                    </div>
+                    <div class="other hideSection test" id="otherFlag">
+                        <div>
+                            <a href="#"><img src="images/o1.jpg"></a>
+                            <h3>wishlist</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/o2.jpg"></a>
+                            <h3>cart</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/o3.jpg"></a>
+                            <h3>dashboard</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/o4.jpg"></a>
+                            <h3>login</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/o5.jpg"></a>
+                            <h3>register</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/o6.jpg"></a>
+                            <h3>contact us</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/o7.jpg"></a>
+                            <h3>forget password</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/o8.jpg"></a>
+                            <h3>checkout</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/o9.jpg"></a>
+                            <h3>about us</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/o10.jpg"></a>
+                            <h3>search</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/o11.jpg"></a>
+                            <h3>collection</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/o12.jpg"></a>
+                            <h3>look book</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/o13.jpg"></a>
+                            <h3>404</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/o14.jpg"></a>
+                            <h3>faq</h3>
+                        </div>
+                    </div>
+                    <div class="blog hideSection test" id="blogFlag">
+                        <div>
+                            <a href="#"><img src="images/b1.jpg"></a>
+                            <h3>no sidebar</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/b2.jpg"></a>
+                            <h3>left sidebar</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/b3.jpg"></a>
+                            <h3>right sidebar</h3>
+                        </div>
+                    </div>
+                </section>
+                <article class="ecommerce">
+                    <h3>e-commerce admin template</h3>
+                    <div class="feutsCommerce">
+                        <div>
+                            <a href="#"><img src="images/e1.jpg"></a>
+                            <h3>no sidebar</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/e2.jpg"></a>
+                            <h3>left sidebar</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/e3.jpg"></a>
+                            <h3>right sidebar</h3>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/e4.jpg"></a>
+                            <h3>right sidebar</h3>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <!-- End Article Feutures -->
+        
+        <!-- Start Article Special Feutures -->
+        <article class="specialFeat">
+            <div class="container">
+                <h2>our special-features</h2>
+                <p>Multikart HTML template is an apparently simple but highly functional tempalate designed for creating a flourisahing online business.</p>
+                <div class="ourFeats">
+                    <div>
+                        <h4>
+                            <span></span><span></span><span></span>
+                            attractive lookbook
+                        </h4>
+                        <img src="images/f1.png">
+                    </div>
+                    <div>
+                        <h4>
+                            <span></span><span></span><span></span>
+                            fly to cart
+                        </h4>
+                        <img src="images/f2.png">
+                    </div>
+                    <div>
+                        <h4>
+                            <span></span><span></span><span></span>
+                            product zoom
+                        </h4>
+                        <img src="images/f3.png">
+                    </div>
+                    <div>
+                        <h4>
+                            <span></span><span></span><span></span>
+                            10+product hover
+                        </h4>
+                        <img src="images/f4.png">
+                    </div>
+                    <div>
+                        <h4>
+                            <span></span><span></span><span></span>
+                            off-canvas cart
+                        </h4>
+                        <img src="images/f5.png">
+                    </div>
+                    <div>
+                        <h4>
+                            <span></span><span></span><span></span>
+                            facebook chat
+                        </h4>
+                        <img src="images/f6.png">
+                    </div>
+                    <div>
+                        <h4>
+                            <span></span><span></span><span></span>
+                            color option
+                        </h4>
+                        <img src="images/f7.png">
+                    </div>
+                    <div>
+                        <h4>
+                            <span></span><span></span><span></span>
+                            mobile optimized
+                        </h4>
+                        <img src="images/f8.png">
+                    </div>
+                    <div>
+                        <h4>
+                            <span></span><span></span><span></span>
+                            count down
+                        </h4>
+                        <img src="images/f9.png">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- End Article Special Feutures -->
+        
+        <!-- End Article Popup -->
+        <article class="popup">
+            <div class="container">
+                <h2>popups types</h2>
+                <p>Multikart has one newsletter popup, exit popup, age varification popup & add to cart popup.</p>
+                <img src="images/popup.png">
+            </div>
+        </article>
+        <!-- End Article Popup -->
+        
+        <!-- Start Article Email -->
+        <article class="email">
+            <div class="container">
+                <div class="emailFlex">
+                    <div class="col1">
+                        <img src="images/mult1.jpg">
+                        <img src="images/sticker.png">
+                    </div>
+                    <div class="col2">
+                        <div>
+                            <h3>email template</h3>
+                            <p>Multikart come with 4+ email template which include two order success template & two email template</p>
+                        </div>
+                        <img src="images/mult2.jpg">
+                    </div>
+                    <div class="col3">
+                        <img src="images/mult3.jpg">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- End Article Core Features -->
+
+        <!-- Start Article Core Features -->
+        <article class="core">
+            <div class="container">
+                <h3>core features</h3>
+                <p>And there is many more features..</p>
+                <div class="coreFeats">
+                    <div class="b1">
+                        <div>
+                            <img src="images/c1.png">
+                        </div>
+                        <h4>angular</h4>
+                    </div>
+                    <div class="b2">
+                        <div>
+                            <img src="images/c2.png">
+                        </div>
+                        <h4>html5</h4>
+                    </div>
+                    <div class="b3">
+                        <div>
+                            <img src="images/c3.png">
+                        </div>
+                        <h4>css3</h4>
+                    </div>
+                    <div class="b4">
+                        <div>
+                            <img src="images/c4.png">
+                        </div>
+                        <h4>bootstrap</h4>
+                    </div>
+                    <div class="b5">
+                        <div>
+                            <img src="images/c5.png">
+                        </div>
+                        <h4>sass</h4>
+                    </div>
+                    <div class="b6">
+                        <div>
+                            <img src="images/c6.png">
+                        </div>
+                        <h4>w3 validate</h4>
+                    </div>
+                    <div class="b7">
+                        <div>
+                            <img src="images/c7.png">
+                        </div>
+                        <h4>unlimited color filters</h4>
+                    </div>
+                    <div class="b8">
+                        <div>
+                            <img src="images/c8.png">
+                        </div>
+                        <h4>product zoom</h4>
+                    </div>
+                    <div class="b9">
+                        <div>
+                            <img src="images/c9.png">
+                        </div>
+                        <h4>multilevel Menu</h4>
+                    </div>
+                    <div class="b10">
+                        <div>
+                            <img src="images/c10.png">
+                        </div>
+                        <h4>ngx infinite loader</h4>
+                    </div>
+                    <div class="b11">
+                        <div>
+                            <img src="images/c11.png">
+                        </div>
+                        <h4>product-time reminder</h4>
+                    </div>
+                    <div class="b12">
+                        <div>
+                            <img src="images/c12.png">
+                        </div>
+                        <h4>instrgram api</h4>
+                    </div>
+                    <div class="b13">
+                        <div>
+                            <img src="images/c13.png">
+                        </div>
+                        <h4>full-width layout</h4>
+                    </div>
+                    <div class="b14">
+                        <div>
+                            <img src="images/c14.png">
+                        </div>
+                        <h4>lookbook</h4>
+                    </div>
+                    <div class="b15">
+                        <div>
+                            <img src="images/c15.png">
+                        </div>
+                        <h4>product compare</h4>
+                    </div>
+                    <div class="b16">
+                        <div>
+                            <img src="images/c16.png">
+                        </div>
+                        <h4>google fonts</h4>
+                    </div>
+                    <div class="b17">
+                        <div>
+                            <img src="images/c17.png">
+                        </div>
+                        <h4>ngx paypal</h4>
+                    </div>
+                    <div class="b18">
+                        <div>
+                            <img src="images/c18.png">
+                        </div>
+                        <h4>scripe.js</h4>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- End Article Email -->
+        
+        <!-- Start Footer -->
+        <footer>
+            <div class="container">
+                <div>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>purchase the multikart
+                & create beautiful online store</p>
+                <button>purchase now</button>
+            </div>
+        </footer>
+        <!-- End Footer -->
+        
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
